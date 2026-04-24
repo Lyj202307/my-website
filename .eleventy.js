@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
   // 1. 直接复制静态资源到输出目录
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("base.css");
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("main.js");
