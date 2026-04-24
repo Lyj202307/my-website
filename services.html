@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -23,9 +23,9 @@
   <script>
     window.tailwindConfig={theme:{extend:{colors:{brand:{red:'#e31e24',black:'#0d0d0d',dark:'#111111'}},fontFamily:{display:['Bebas Neue','sans-serif'],body:['Inter','sans-serif']}}}};
     window.dataLayer=window.dataLayer||[];
-    function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','{{ site.google_analytics_id }}');
+    function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','G-XXXXXXXX');
   </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="base.css">
 </head>
@@ -145,8 +145,8 @@
         <div>
           <h3 class="text-brand-red text-[9px] font-black tracking-widest uppercase mb-8">Contact</h3>
           <ul class="space-y-4 text-[11px] font-bold text-white/40 uppercase tracking-widest">
-            <li class="text-white/60">{{ site.email }}</li>
-            <li><a href="https://wa.me/{{ site.whatsapp | replace(' ', '') | replace('+', '') }}" class="hover:text-white transition-colors">WA: {{ site.whatsapp }}</a></li>
+            <li class="text-white/60">info@jiapinhuiclothing.com</li>
+            <li><a href="https://wa.me/8613800000000" class="hover:text-white transition-colors">WA: +86 138 0000 0000</a></li>
           </ul>
           <a href="contact.html" class="btn-primary mt-8 block text-center">Get Quote</a>
         </div>
@@ -158,7 +158,7 @@
   </footer>
 
   <!-- WhatsApp FAB -->
-  <a href="https://wa.me/{{ site.whatsapp | replace(' ', '') | replace('+', '') }}" target="_blank" rel="noopener"
+  <a href="https://wa.me/8613800000000" target="_blank" rel="noopener"
      class="fixed bottom-8 right-8 z-[5000] w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
     <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.483 8.413-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.308 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.319 1.592 5.548 0 10.064-4.514 10.066-10.066.001-2.692-1.047-5.221-2.952-7.127s-4.435-2.956-7.127-2.957c-5.549 0-10.066 4.515-10.067 10.068 0 2.112.569 3.59 1.539 5.274l-.987 3.604 3.709-.973zm10.515-6.845c-.247-.124-1.465-.722-1.692-.804-.226-.083-.391-.124-.556.124-.165.248-.641.805-.784.969-.143.165-.286.186-.534.062-.247-.124-1.044-.385-1.988-1.227-.735-.656-1.231-1.465-1.375-1.712-.143-.247-.015-.381.11-.504.113-.11.247-.289.371-.434.124-.144.165-.247.247-.412.082-.165.042-.309-.02-.433-.062-.124-.557-1.343-.763-1.838-.2-.486-.404-.419-.557-.425-.144-.006-.309-.007-.474-.007s-.433.062-.66.309c-.227.247-.866.846-.866 2.064s.887 2.396 1.011 2.561c.124.165 1.744 2.662 4.225 3.732.59.255 1.05.407 1.408.521.593.188 1.132.161 1.558.097.476-.071 1.465-.598 1.671-1.176.206-.578.206-1.073.144-1.176-.061-.103-.227-.165-.474-.29z"/></svg>
   </a>
