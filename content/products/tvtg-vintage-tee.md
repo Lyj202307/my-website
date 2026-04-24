@@ -1,3 +1,4 @@
+---
 title: "Vintage Wash Tee"
 ref: "T-VTG"
 moq: "100 PCS"
@@ -11,3 +12,5 @@ specs:
   wash: "Acid / Pigment"
   branding: "Screen / DTF / Emboss"
 weight: 300
+tags: products
+---

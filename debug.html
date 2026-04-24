@@ -1,0 +1,11 @@
+---
+permalink: /debug.html
+---
+<h1>Debug Info</h1>
+<p>Total products: {{ collections.products | length }}</p>
+<p>Total all: {{ collections.all | length }}</p>
+<ul>
+{% for item in collections.all %}
+  <li>{{ item.url }} - {{ item.data.title }} (Tags: {{ item.data.tags | join(",") }})</li>
+{% endfor %}
+</ul>

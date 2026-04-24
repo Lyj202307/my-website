@@ -1,3 +1,4 @@
+---
 title: "Acid Wash Zip Hoodie"
 ref: "H-302"
 moq: "100 PCS"
@@ -11,3 +12,5 @@ specs:
   wash: "Acid / Bleach / Oil"
   lead: "30–35 Days Bulk"
 weight: 750
+tags: products
+---

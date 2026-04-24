@@ -1,3 +1,4 @@
+---
 title: "500GSM Heavyweight Hoodie"
 ref: "H-501"
 moq: "100 PCS"
@@ -10,3 +11,6 @@ specs:
   gsm: "480 – 560 GSM"
   wash: "Garment Dye / Stone Wash"
   lead: "30–35 Days Bulk"
+weight: 800
+tags: products
+---

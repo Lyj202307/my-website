@@ -1,3 +1,4 @@
+---
 title: "320GSM Oversized Tee"
 ref: "T-320"
 moq: "100 PCS"
@@ -11,3 +12,5 @@ specs:
   fit: "Oversized / Boxy"
   sizes: "XS–3XL Custom"
 weight: 350
+tags: products
+---

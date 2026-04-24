@@ -1,3 +1,4 @@
+---
 title: "Rhinestone Graphic Tee"
 ref: "T-RHS"
 moq: "100 PCS"
@@ -11,3 +12,5 @@ specs:
   decoration: "Rhinestone + Print"
   compliance: "EU REACH / CA Prop 65"
 weight: 300
+tags: products
+---

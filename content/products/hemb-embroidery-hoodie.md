@@ -1,3 +1,4 @@
+---
 title: "Chenille Embroidery Hoodie"
 ref: "H-EMB"
 moq: "100 PCS"
@@ -11,3 +12,5 @@ specs:
   branding: "Chenille / DTF / Screen"
   colours: "Custom Pantone"
 weight: 850
+tags: products
+---
