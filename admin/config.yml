@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "products"
+    label: "Product Catalog (Alibaba Style)"
+    folder: "content/products"
+    create: true
+    slug: "{{ref}}-{{name}}"
+    fields:
+      - { label: "Product Name", name: "title", widget: "string" }
+      - { label: "REF Number", name: "ref", widget: "string" }
+      - { label: "MOQ (Quantity)", name: "moq", widget: "string", default: "100 PCS" }
+      - { label: "Main Category", name: "category", widget: "select", options: ["Hoodies", "T-Shirts", "Jackets", "Others"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Sample Price (USD)", name: "price", widget: "number", value_type: "float" }
+      - { label: "Short Description", name: "description", widget: "text" }
+      
+      - label: "Technical Specifications"
+        name: "specs"
+        widget: "object"
+        fields:
+          - { label: "Fabric Type", name: "fabric", widget: "string" }
+          - { label: "GSM (Weight)", name: "gsm", widget: "string" }
+          - { label: "Wash/Treatment", name: "wash", widget: "string" }
+          - { label: "Bulk Lead Time", name: "lead", widget: "string", default: "30-35 Days" }
+
+  - name: "factory_info"
+    label: "Factory Info & Stats"
+    files:
+      - label: "Global Contact & Stats"
+        name: "globals"
+        file: "content/globals.yml"
+        fields:
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string" }
+          - { label: "Contact Email", name: "email", widget: "string" }
+          - { label: "Annual Capacity (PCS)", name: "capacity", widget: "string" }
+          - { label: "Years of Experience", name: "years", widget: "string" }

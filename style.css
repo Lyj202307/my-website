@@ -1,0 +1,32 @@
+/* shared.css - JIAPINHUI CLOTHING V3 EN */
+:root {
+  --brand-red: #e31e24;
+  --brand-black: #0d0d0d;
+  --brand-dark: #181818;
+  --text-gray: #888;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.glass {
+  background: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Animations */
+.reveal-up { opacity: 0; transform: translateY(30px); }
+.reveal-left { opacity: 0; transform: translateX(-30px); }
+
+/* Custom Slant for Sections */
+.clip-slant { clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
+
+/* Swiper overrides */
+.swiper-pagination-bullet-active { background: var(--brand-red) !important; }

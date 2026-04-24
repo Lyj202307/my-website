@@ -1,0 +1,120 @@
+/* ============================================
+   JIAPINHUI v3 — Global Base Styles
+   WCAG AA contrast, will-change hints for GSAP
+   ============================================ */
+
+/* ---- Reset & Box Model ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ---- Font ---- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap&display=swap');
+
+/* font-display: swap baked in via Google Fonts ?display=swap param above */
+:root {
+  --red:    #e31e24;
+  --black:  #0d0d0d;
+  --dark:   #111111;
+  --muted:  #999999;   /* ≥4.5:1 on #0d0d0d → WCAG AA */
+  --white:  #ffffff;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+/* ---- Blueprint grid background ---- */
+.blueprint-grid {
+  background-color: var(--black);
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ---- Typography ---- */
+.font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
+.text-outline  { -webkit-text-stroke: 1px rgba(255,255,255,.25); color: transparent; }
+
+/* ---- GSAP animation targets — pre-set will-change to kill layout shift ---- */
+.reveal-up   { opacity: 0; transform: translateY(32px); will-change: opacity, transform; }
+.reveal-left { opacity: 0; transform: translateX(-32px); will-change: opacity, transform; }
+
+/* ---- No-JS / print fallback: show all reveal elements immediately ---- */
+@media print, (prefers-reduced-motion: reduce) {
+  .reveal-up, .reveal-left { opacity: 1 !important; transform: none !important; }
+}
+
+/* ---- Nav scrolled glass ---- */
+.nav-scrolled {
+  background: rgba(13,13,13,.92) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+/* ---- Shared button ---- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--red);
+  color: var(--white);
+  padding: .9rem 2.5rem;
+  font-size: .65rem;
+  font-weight: 900;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  transition: background .3s, color .3s;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary:hover { background: var(--white); color: var(--black); }
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,.25);
+  color: var(--white);
+  padding: .9rem 2.5rem;
+  font-size: .65rem;
+  font-weight: 900;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  transition: background .3s, color .3s, border-color .3s;
+  cursor: pointer;
+}
+.btn-ghost:hover { background: var(--white); color: var(--black); border-color: var(--white); }
+
+/* Compact version for product grids */
+.btn-compact {
+  padding: .7rem 1rem !important;
+  font-size: .6rem !important;
+}
+
+/* ---- Swiper overrides ---- */
+.swiper-pagination-bullet          { background: rgba(255,255,255,.4) !important; }
+.swiper-pagination-bullet-active   { background: var(--red) !important; }
+.swiper-button-next, .swiper-button-prev { color: white !important; }
+
+/* Hero slide isolation — prevents loop-cloned slides bleeding through */
+.heroSwiper .swiper-slide          { overflow: hidden; isolation: isolate; }
+.heroSwiper .swiper-slide:not(.swiper-slide-active) { z-index: 0 !important; }
+.heroSwiper .swiper-slide-active   { z-index: 2 !important; }
+.heroSwiper                        { isolation: isolate; }
+
+/* ---- Product card ---- */
+.product-card img { transition: transform .7s ease; will-change: transform; }
+.product-card:hover img { transform: scale(1.07); }
+
+.product-card-table tr { transition: background .3s; }
+.product-card-table tr:hover { background: rgba(255,255,255,.02); }
+.product-card-table td { font-family: 'Inter', sans-serif; }
+
+/* ---- Accessibility: focus ring ---- */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
