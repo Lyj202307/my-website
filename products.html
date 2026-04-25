@@ -291,27 +291,6 @@
         </article>
 
       </div>
-            </table>
-            <div class="grid grid-cols-2 gap-4">
-              <a href="contact.html" class="btn-ghost btn-compact text-center block" onclick="trackCTA('product-{{ product.data.ref }}-inquiry')">Inquiry</a>
-              <button class="snipcart-add-item btn-primary btn-compact"
-                data-item-id="{{ product.data.ref }}-SAMPLE"
-                data-item-price="{{ product.data.price }}"
-                data-item-url="products.html"
-                data-item-description="Physical Sample: {{ product.data.title }}"
-                data-item-image="{{ product.data.image }}"
-                data-item-name="{{ product.data.title }} Sample"
-                data-item-weight="{{ product.data.weight or 500 }}"
-                onclick="trackCTA('product-{{ product.data.ref }}-buy-sample')">
-                Buy Sample (${{ product.data.price }})
-              </button>
-            </div>
-          </div>
-        </article>
-        {% endif %}
-        {% endfor %}
-      </div>
-      {% endfor %}
 
       <!-- OEM Process Banner -->
       <div class="border border-white/10 p-12 md:p-16 bg-brand-dark/30 reveal-up">
