@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mobile Menu
-    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileBtn = document.getElementById('mobile-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const closeBtn = document.getElementById('close-menu');
     
-    if(mobileBtn) {
+    if(mobileBtn && mobileMenu) {
         mobileBtn.addEventListener('click', () => mobileMenu.classList.remove('translate-x-full'));
         closeBtn.addEventListener('click', () => mobileMenu.classList.add('translate-x-full'));
     }
