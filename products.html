@@ -86,39 +86,211 @@
   <section class="py-24">
     <div class="max-w-screen-xl mx-auto px-6">
 
-      {% set categories = ["Hoodies", "T-Shirts"] %}
-      {% for category in categories %}
-      <!-- {{ category }} Category -->
+      <!-- HOODIES CATEGORY -->
       <div class="flex items-center gap-6 mb-16 reveal-up">
-        <span class="text-brand-red text-[9px] font-black tracking-[0.5em] uppercase">Category 0{{ loop.index }}</span>
+        <span class="text-brand-red text-[9px] font-black tracking-[0.5em] uppercase">Category 01</span>
         <div class="flex-1 h-px bg-white/5"></div>
-        <span class="font-display text-4xl text-white/20">{{ category | upper }}</span>
+        <span class="font-display text-4xl text-white/20">HOODIES</span>
       </div>
-
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 mb-24">
-        {% for product in collections.products %}
-        {% if product.data.category == category %}
-        <!-- {{ product.data.title }} -->
+
+        <!-- H501 Heavyweight Hoodie -->
         <article class="group relative bg-brand-dark overflow-hidden reveal-up">
           <div class="aspect-[3/4] overflow-hidden">
-            <img src="{{ product.data.image }}"
-                 loading="lazy" decoding="async"
-                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" alt="{{ product.data.title }}">
+            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_1-DhDJV9og.jpg" loading="lazy" decoding="async"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" alt="500GSM Heavyweight Hoodie">
           </div>
           <div class="p-8 border-t border-white/5">
             <div class="flex items-center justify-between mb-4">
-              <span class="text-[8px] font-black tracking-widest text-brand-red border border-brand-red px-2 py-1">REF: {{ product.data.ref }}</span>
-              <span class="text-[8px] font-black tracking-widest text-white/30">MOQ {{ product.data.moq }}</span>
+              <span class="text-[8px] font-black tracking-widest text-brand-red border border-brand-red px-2 py-1">REF: H501</span>
+              <span class="text-[8px] font-black tracking-widest text-white/30">MOQ 100 PCS</span>
             </div>
-            <h2 class="font-display text-3xl text-white mb-2">{{ product.data.title }}</h2>
-            <p class="text-white/40 text-xs leading-relaxed mb-6">{{ product.data.description }}</p>
+            <h2 class="font-display text-3xl text-white mb-2">500GSM HEAVYWEIGHT HOODIE</h2>
+            <p class="text-white/40 text-xs leading-relaxed mb-6">Ultra-dense 500GSM fleece with dropped shoulders and reinforced kangaroo pocket. The benchmark blank for premium streetwear.</p>
             <table class="w-full text-[10px] mb-6 border-t border-white/5 product-card-table">
-              {% for key, val in product.data.specs %}
-              <tr class="border-b border-white/5">
-                <td class="py-3 text-white/50 uppercase font-bold tracking-wider">{{ key }}</td>
-                <td class="py-3 text-white text-right">{{ val }}</td>
-              </tr>
-              {% endfor %}
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Fabric</td><td class="py-3 text-white text-right">500GSM French Terry</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Fit</td><td class="py-3 text-white text-right">Oversized Drop Shoulder</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Lead Time</td><td class="py-3 text-white text-right">25–35 Days</td></tr>
+            </table>
+            <div class="grid grid-cols-2 gap-4">
+              <a href="contact.html" class="btn-ghost btn-compact text-center block">Inquiry</a>
+              <button class="snipcart-add-item btn-primary btn-compact"
+                data-item-id="H501-SAMPLE" data-item-price="45" data-item-url="products.html"
+                data-item-description="Physical Sample: 500GSM Heavyweight Hoodie"
+                data-item-image="https://www.jiapinhuiclothing.com/assets/ProductImg_1-DhDJV9og.jpg"
+                data-item-name="500GSM Heavyweight Hoodie Sample" data-item-weight="500">
+                Buy Sample ($45)
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- H302 Acid Wash Zip Hoodie -->
+        <article class="group relative bg-brand-dark overflow-hidden reveal-up">
+          <div class="aspect-[3/4] overflow-hidden">
+            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_2-BwVNGZmN.jpg" loading="lazy" decoding="async"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" alt="Acid Wash Zip Hoodie">
+          </div>
+          <div class="p-8 border-t border-white/5">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[8px] font-black tracking-widest text-brand-red border border-brand-red px-2 py-1">REF: H302</span>
+              <span class="text-[8px] font-black tracking-widest text-white/30">MOQ 100 PCS</span>
+            </div>
+            <h2 class="font-display text-3xl text-white mb-2">ACID WASH ZIP HOODIE</h2>
+            <p class="text-white/40 text-xs leading-relaxed mb-6">Garment-dyed with our proprietary acid-wash formula. Each piece has a unique vintage finish. Full-length YKK zip.</p>
+            <table class="w-full text-[10px] mb-6 border-t border-white/5 product-card-table">
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Fabric</td><td class="py-3 text-white text-right">380GSM Fleece</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Wash</td><td class="py-3 text-white text-right">Acid / Pigment</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Lead Time</td><td class="py-3 text-white text-right">30–40 Days</td></tr>
+            </table>
+            <div class="grid grid-cols-2 gap-4">
+              <a href="contact.html" class="btn-ghost btn-compact text-center block">Inquiry</a>
+              <button class="snipcart-add-item btn-primary btn-compact"
+                data-item-id="H302-SAMPLE" data-item-price="55" data-item-url="products.html"
+                data-item-description="Physical Sample: Acid Wash Zip Hoodie"
+                data-item-image="https://www.jiapinhuiclothing.com/assets/ProductImg_2-BwVNGZmN.jpg"
+                data-item-name="Acid Wash Zip Hoodie Sample" data-item-weight="500">
+                Buy Sample ($55)
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- HEMB Chenille Embroidery Hoodie -->
+        <article class="group relative bg-brand-dark overflow-hidden reveal-up">
+          <div class="aspect-[3/4] overflow-hidden">
+            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_3-C1H2kST5.jpg" loading="lazy" decoding="async"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" alt="Chenille Embroidery Hoodie">
+          </div>
+          <div class="p-8 border-t border-white/5">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[8px] font-black tracking-widest text-brand-red border border-brand-red px-2 py-1">REF: HEMB</span>
+              <span class="text-[8px] font-black tracking-widest text-white/30">MOQ 100 PCS</span>
+            </div>
+            <h2 class="font-display text-3xl text-white mb-2">CHENILLE EMBROIDERY HOODIE</h2>
+            <p class="text-white/40 text-xs leading-relaxed mb-6">Handcrafted chenille patches with 3D puff embroidery. Maximum texture and premium brand expression on 450GSM base.</p>
+            <table class="w-full text-[10px] mb-6 border-t border-white/5 product-card-table">
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Fabric</td><td class="py-3 text-white text-right">450GSM Fleece</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Process</td><td class="py-3 text-white text-right">Chenille + 3D Puff</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Lead Time</td><td class="py-3 text-white text-right">35–45 Days</td></tr>
+            </table>
+            <div class="grid grid-cols-2 gap-4">
+              <a href="contact.html" class="btn-ghost btn-compact text-center block">Inquiry</a>
+              <button class="snipcart-add-item btn-primary btn-compact"
+                data-item-id="HEMB-SAMPLE" data-item-price="65" data-item-url="products.html"
+                data-item-description="Physical Sample: Chenille Embroidery Hoodie"
+                data-item-image="https://www.jiapinhuiclothing.com/assets/ProductImg_3-C1H2kST5.jpg"
+                data-item-name="Chenille Embroidery Hoodie Sample" data-item-weight="500">
+                Buy Sample ($65)
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- T-SHIRTS CATEGORY -->
+      <div class="flex items-center gap-6 mb-16 reveal-up">
+        <span class="text-brand-red text-[9px] font-black tracking-[0.5em] uppercase">Category 02</span>
+        <div class="flex-1 h-px bg-white/5"></div>
+        <span class="font-display text-4xl text-white/20">T-SHIRTS</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 mb-24">
+
+        <!-- T320 Oversized Tee -->
+        <article class="group relative bg-brand-dark overflow-hidden reveal-up">
+          <div class="aspect-[3/4] overflow-hidden">
+            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_4-Cv2RhroX.jpg" loading="lazy" decoding="async"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" alt="320GSM Oversized Tee">
+          </div>
+          <div class="p-8 border-t border-white/5">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[8px] font-black tracking-widest text-brand-red border border-brand-red px-2 py-1">REF: T320</span>
+              <span class="text-[8px] font-black tracking-widest text-white/30">MOQ 100 PCS</span>
+            </div>
+            <h2 class="font-display text-3xl text-white mb-2">320GSM OVERSIZED TEE</h2>
+            <p class="text-white/40 text-xs leading-relaxed mb-6">Boxy oversized silhouette with raw-edge finishing. 320GSM heavyweight cotton with excellent printability for screen and DTF.</p>
+            <table class="w-full text-[10px] mb-6 border-t border-white/5 product-card-table">
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Fabric</td><td class="py-3 text-white text-right">320GSM 100% Cotton</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Fit</td><td class="py-3 text-white text-right">Boxy Oversized</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Lead Time</td><td class="py-3 text-white text-right">20–30 Days</td></tr>
+            </table>
+            <div class="grid grid-cols-2 gap-4">
+              <a href="contact.html" class="btn-ghost btn-compact text-center block">Inquiry</a>
+              <button class="snipcart-add-item btn-primary btn-compact"
+                data-item-id="T320-SAMPLE" data-item-price="30" data-item-url="products.html"
+                data-item-description="Physical Sample: 320GSM Oversized Tee"
+                data-item-image="https://www.jiapinhuiclothing.com/assets/ProductImg_4-Cv2RhroX.jpg"
+                data-item-name="320GSM Oversized Tee Sample" data-item-weight="300">
+                Buy Sample ($30)
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- TVTG Vintage Wash Tee -->
+        <article class="group relative bg-brand-dark overflow-hidden reveal-up">
+          <div class="aspect-[3/4] overflow-hidden">
+            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_5-DjCrDcmf.jpg" loading="lazy" decoding="async"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" alt="Vintage Wash Tee">
+          </div>
+          <div class="p-8 border-t border-white/5">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[8px] font-black tracking-widest text-brand-red border border-brand-red px-2 py-1">REF: TVTG</span>
+              <span class="text-[8px] font-black tracking-widest text-white/30">MOQ 100 PCS</span>
+            </div>
+            <h2 class="font-display text-3xl text-white mb-2">VINTAGE WASH TEE</h2>
+            <p class="text-white/40 text-xs leading-relaxed mb-6">Stone-washed for authentic vintage texture. Soft hand feel with natural colour variation — no two pieces identical.</p>
+            <table class="w-full text-[10px] mb-6 border-t border-white/5 product-card-table">
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Fabric</td><td class="py-3 text-white text-right">280GSM Cotton</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Wash</td><td class="py-3 text-white text-right">Stone / Enzyme Wash</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Lead Time</td><td class="py-3 text-white text-right">25–35 Days</td></tr>
+            </table>
+            <div class="grid grid-cols-2 gap-4">
+              <a href="contact.html" class="btn-ghost btn-compact text-center block">Inquiry</a>
+              <button class="snipcart-add-item btn-primary btn-compact"
+                data-item-id="TVTG-SAMPLE" data-item-price="35" data-item-url="products.html"
+                data-item-description="Physical Sample: Vintage Wash Tee"
+                data-item-image="https://www.jiapinhuiclothing.com/assets/ProductImg_5-DjCrDcmf.jpg"
+                data-item-name="Vintage Wash Tee Sample" data-item-weight="300">
+                Buy Sample ($35)
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- TRHS Rhinestone Graphic Tee -->
+        <article class="group relative bg-brand-dark overflow-hidden reveal-up">
+          <div class="aspect-[3/4] overflow-hidden">
+            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_6-BfPBNVqR.jpg" loading="lazy" decoding="async"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" alt="Rhinestone Graphic Tee">
+          </div>
+          <div class="p-8 border-t border-white/5">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[8px] font-black tracking-widest text-brand-red border border-brand-red px-2 py-1">REF: TRHS</span>
+              <span class="text-[8px] font-black tracking-widest text-white/30">MOQ 100 PCS</span>
+            </div>
+            <h2 class="font-display text-3xl text-white mb-2">RHINESTONE GRAPHIC TEE</h2>
+            <p class="text-white/40 text-xs leading-relaxed mb-6">Heat-set rhinestone application with screen-print base. High-impact visual effect for premium streetwear and Y2K aesthetics.</p>
+            <table class="w-full text-[10px] mb-6 border-t border-white/5 product-card-table">
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Fabric</td><td class="py-3 text-white text-right">260GSM Cotton</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Process</td><td class="py-3 text-white text-right">Rhinestone + Screen Print</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 text-white/50 uppercase font-bold tracking-wider">Lead Time</td><td class="py-3 text-white text-right">30–40 Days</td></tr>
+            </table>
+            <div class="grid grid-cols-2 gap-4">
+              <a href="contact.html" class="btn-ghost btn-compact text-center block">Inquiry</a>
+              <button class="snipcart-add-item btn-primary btn-compact"
+                data-item-id="TRHS-SAMPLE" data-item-price="40" data-item-url="products.html"
+                data-item-description="Physical Sample: Rhinestone Graphic Tee"
+                data-item-image="https://www.jiapinhuiclothing.com/assets/ProductImg_6-BfPBNVqR.jpg"
+                data-item-name="Rhinestone Graphic Tee Sample" data-item-weight="300">
+                Buy Sample ($40)
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
             </table>
             <div class="grid grid-cols-2 gap-4">
               <a href="contact.html" class="btn-ghost btn-compact text-center block" onclick="trackCTA('product-{{ product.data.ref }}-inquiry')">Inquiry</a>
