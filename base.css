@@ -118,3 +118,15 @@ a:focus-visible, button:focus-visible {
   outline: 2px solid var(--red);
   outline-offset: 3px;
 }
+
+/* ---- Snipcart Dark Theme Overrides ---- */
+#snipcart {
+  --snipcart-color-link: #e31e24;
+  --snipcart-color-button-primary: #e31e24;
+  --snipcart-color-button-primary-hover: #ffffff;
+  --snipcart-color-button-primary-text: #ffffff;
+  --snipcart-color-button-primary-hover-text: #0d0d0d;
+  --snipcart-color-bg: #0d0d0d;
+  --snipcart-color-input-bg: #111111;
+  --snipcart-color-text: #ffffff;
+}
