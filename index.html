@@ -74,61 +74,68 @@
     </div>
   </nav>
 
-  <!-- HERO SWIPER -->
-  <section class="h-screen w-full relative overflow-hidden">
-    <div class="swiper heroSwiper h-full">
-      <div class="swiper-wrapper">
-        <!-- Slide 01: Engineering -->
-        <div class="swiper-slide relative">
-          <img src="https://www.jiapinhuiclothing.com/assets/carousel_1-Ddccepw_.jpg" class="absolute inset-0 w-full h-full object-cover grayscale opacity-50" alt="Garment engineering laboratory">
-          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent"></div>
-          <div class="relative h-full flex items-center max-w-screen-xl mx-auto px-6">
-            <div class="max-w-4xl hero-content">
-              <p class="text-brand-red text-xs font-black tracking-[0.6em] uppercase mb-6">Technically superior apparel</p>
-              <h2 class="font-display text-[5rem] md:text-[10rem] leading-[0.82] mb-8">GARMENT<br><span class="text-outline">ENGINEERING.</span></h2>
-              <div class="flex flex-wrap gap-6">
-                <a href="products.html" class="btn-primary" onclick="trackCTA('hero-catalog')">Explore Catalog</a>
-                <a href="services.html" class="btn-ghost" onclick="trackCTA('hero-services')">Technical Specs</a>
-              </div>
-            </div>
-          </div>
+  <!-- HERO -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="https://www.jiapinhuiclothing.com/assets/carousel_1-Ddccepw_.jpg" class="w-full h-full object-cover parallax-img scale-110 grayscale opacity-40" alt="Factory Hero">
+        <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+    <div class="relative z-10 text-center px-6 max-w-5xl">
+        <span class="inline-block text-brand-red font-black tracking-[0.6em] uppercase text-xs mb-6 reveal-up">Direct Factory Sourcing</span>
+        <h1 class="font-display text-7xl md:text-[10rem] text-white leading-[0.85] mb-8 reveal-up">HEAVYWEIGHT<br><span class="text-outline">CRAFTSMANSHIP.</span></h1>
+        <p class="text-white/50 text-sm md:text-base tracking-[0.2em] uppercase mb-12 max-w-2xl mx-auto reveal-up">Premium OEM/ODM apparel manufacturing for global streetwear brands. Built for durability, engineered for scale.</p>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6 reveal-up">
+            <a href="products.html" class="btn-primary px-12 py-5 text-sm">EXPLORE CATALOG</a>
+            <a href="contact.html" class="btn-ghost px-12 py-5 text-sm">REQUEST QUOTE</a>
         </div>
-        <!-- Slide 02: Heavyweight -->
-        <div class="swiper-slide relative">
-          <img src="https://www.jiapinhuiclothing.com/assets/carousel_2-CUHxVqmg.jpg" class="absolute inset-0 w-full h-full object-cover grayscale opacity-50" alt="Heavyweight streetwear manufacturing">
-          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent"></div>
-          <div class="relative h-full flex items-center max-w-screen-xl mx-auto px-6">
-            <div class="max-w-4xl hero-content">
-              <p class="text-brand-red text-xs font-black tracking-[0.6em] uppercase mb-6">Premium blanks & Custom OEM</p>
-              <h2 class="font-display text-[5rem] md:text-[10rem] leading-[0.82] mb-8">HEAVYWEIGHT<br><span class="text-outline">CRAFTSMANSHIP.</span></h2>
-              <div class="flex flex-wrap gap-6">
-                <a href="products.html" class="btn-primary">View Hoodies</a>
-                <a href="about.html" class="btn-ghost">Factory Audit</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination !bottom-12 !left-auto !right-6 !w-auto"></div>
     </div>
   </section>
 
+  <!-- MARQUEE SECTION -->
+  <div class="bg-brand-red py-4 overflow-hidden border-y border-white/10 relative z-20">
+    <div class="marquee-inner flex whitespace-nowrap gap-12 text-white font-black tracking-widest uppercase text-[10px]">
+        <span>Premium Streetwear</span>
+        <span class="opacity-30">•</span>
+        <span>Made in China</span>
+        <span class="opacity-30">•</span>
+        <span>Ethical Production</span>
+        <span class="opacity-30">•</span>
+        <span>Direct Factory</span>
+        <span class="opacity-30">•</span>
+        <span>Custom Embroidery</span>
+        <span class="opacity-30">•</span>
+        <span>Worldwide Shipping</span>
+        <span class="opacity-30">•</span>
+        <span>Premium Streetwear</span>
+        <span class="opacity-30">•</span>
+        <span>Made in China</span>
+        <span class="opacity-30">•</span>
+        <span>Ethical Production</span>
+        <span class="opacity-30">•</span>
+        <span>Direct Factory</span>
+        <span class="opacity-30">•</span>
+        <span>Custom Embroidery</span>
+        <span class="opacity-30">•</span>
+        <span>Worldwide Shipping</span>
+    </div>
+  </div>
+
   <!-- STATS -->
-  <section class="py-24 border-b border-white/5 bg-brand-dark/30">
-    <div class="max-w-screen-xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-12">
-      <div class="reveal-up">
+  <section class="py-24 border-b border-white/5 bg-brand-black">
+    <div class="max-w-screen-xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-12 grid-reveal">
+      <div>
         <div class="font-display text-7xl text-white mb-2">12+ Years</div>
         <div class="text-brand-red text-[10px] font-black uppercase tracking-widest">Manufacturing Expertise</div>
       </div>
-      <div class="reveal-up" style="transition-delay:0.1s">
+      <div>
         <div class="font-display text-7xl text-white mb-2">1.2M PCS</div>
         <div class="text-brand-red text-[10px] font-black uppercase tracking-widest">Annual Production</div>
       </div>
-      <div class="reveal-up" style="transition-delay:0.2s">
+      <div>
         <div class="font-display text-7xl text-white mb-2">500+</div>
         <div class="text-brand-red text-[10px] font-black uppercase tracking-widest">Global Brand Partners</div>
       </div>
-      <div class="reveal-up" style="transition-delay:0.3s">
+      <div>
         <div class="font-display text-7xl text-white mb-2">100%</div>
         <div class="text-brand-red text-[10px] font-black uppercase tracking-widest">Internal Quality Control</div>
       </div>
@@ -242,34 +249,34 @@
         </div>
         <a href="products.html" class="btn-ghost btn-compact">View Full Catalog →</a>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5">
-        <a href="products.html" class="group relative bg-brand-dark overflow-hidden block reveal-up">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 grid-reveal">
+        <div class="group relative bg-brand-black overflow-hidden block">
           <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_1-DhDJV9og.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-80" alt="500GSM Heavyweight Hoodie">
+            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_1-DhDJV9og.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 opacity-80" alt="500GSM Heavyweight Hoodie">
           </div>
-          <div class="p-6 border-t border-white/5">
+          <div class="p-6 border-t border-white/5 bg-brand-black">
             <span class="text-[8px] font-black tracking-widest text-brand-red block mb-2">REF: H501</span>
-            <h3 class="font-display text-2xl text-white group-hover:text-brand-red transition-colors">500GSM HEAVYWEIGHT HOODIE</h3>
+            <h3 class="font-display text-2xl text-white group-hover:text-brand-red transition-colors uppercase">500GSM Heavyweight Hoodie</h3>
           </div>
-        </a>
-        <a href="products.html" class="group relative bg-brand-dark overflow-hidden block reveal-up" style="transition-delay:.1s">
+        </div>
+        <div class="group relative bg-brand-black overflow-hidden block">
           <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_2-17CD8ZSH.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-80" alt="Acid Wash Zip Hoodie">
+            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_2-17CD8ZSH.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 opacity-80" alt="Acid Wash Zip Hoodie">
           </div>
-          <div class="p-6 border-t border-white/5">
+          <div class="p-6 border-t border-white/5 bg-brand-black">
             <span class="text-[8px] font-black tracking-widest text-brand-red block mb-2">REF: H302</span>
-            <h3 class="font-display text-2xl text-white group-hover:text-brand-red transition-colors">ACID WASH ZIP HOODIE</h3>
+            <h3 class="font-display text-2xl text-white group-hover:text-brand-red transition-colors uppercase">Acid Wash Zip Hoodie</h3>
           </div>
-        </a>
-        <a href="products.html" class="group relative bg-brand-dark overflow-hidden block reveal-up" style="transition-delay:.2s">
+        </div>
+        <div class="group relative bg-brand-black overflow-hidden block">
           <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_4-gwh0svBm.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 opacity-80" alt="320GSM Oversized Tee">
+            <img src="https://www.jiapinhuiclothing.com/assets/ProductImg_3-BIVb1DP_.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 opacity-80" alt="Chenille Embroidery Hoodie">
           </div>
-          <div class="p-6 border-t border-white/5">
-            <span class="text-[8px] font-black tracking-widest text-brand-red block mb-2">REF: T320</span>
-            <h3 class="font-display text-2xl text-white group-hover:text-brand-red transition-colors">320GSM OVERSIZED TEE</h3>
+          <div class="p-6 border-t border-white/5 bg-brand-black">
+            <span class="text-[8px] font-black tracking-widest text-brand-red block mb-2">REF: HEMB</span>
+            <h3 class="font-display text-2xl text-white group-hover:text-brand-red transition-colors uppercase">Chenille Embroidery Hoodie</h3>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </section>
